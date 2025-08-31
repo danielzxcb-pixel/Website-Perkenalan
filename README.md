@@ -1,314 +1,626 @@
 <!DOCTYPE html>
 <html lang="id">
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Perkenalan Diri - Daniel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <style>
-        /* ... (isi CSS kamu di sini, copy saja dari yang sudah kamu punya) ... */
-    </style>
-    <!-- Javascript -->
-    <script>
-        /* ... (isi script kamu di sini, copy saja dari yang sudah kamu punya) ... */
-    </script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a href="#welcome" class="active">Welcome</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#refleksi">Refleksi Diri</a></li>
-            <li><a href="#project">My Project</a></li>
-        </ul>
-    </nav>
-    <main>
-        <!-- Welcome Section -->
-        <section id="welcome" class="hero">
-            <img class="hero-img" src="https://i.pravatar.cc/120?img=3" alt="Foto Profil">
-            <div class="hero-title">Daniel Z</div>
-            <div class="hero-subtitle">Mahasiswa & Web Developer</div>
-            <div class="hero-desc">
-                Selamat datang di website perkenalan diri saya.<br>
-                Saya suka belajar teknologi baru dan membangun proyek digital!
-            </div>
-            <div class="social">
-                <a href="mailto:daniel@example.com">Email</a>
-                <a href="https://github.com/danielzxcb-pixel" target="_blank">GitHub</a>
-                <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-            </div>
-        </section>
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div>
-                Saya Daniel, seorang mahasiswa yang antusias di bidang pengembangan web dan AI.
-                Saya suka belajar hal baru, berkolaborasi, dan menciptakan solusi digital yang bermanfaat.
-                Motto saya: <b>"Tetap berkembang, jangan takut gagal."</b>
-            </div>
-        </section>
-        <!-- Refleksi Diri Section -->
-        <section id="refleksi">
-            <h2>Refleksi Diri</h2>
-            <div>
-                Dalam proses belajar web, saya pernah gagal deploy project dan menemukan banyak bug. Tapi dari situ saya belajar pentingnya ketekunan dan evaluasi diri.
-                Refleksi diri membantu saya terus memperbaiki kemampuan dan karakter.
-            </div>
-        </section>
-        <!-- My Project Section -->
-        <section id="project">
-            <h2>My Project</h2>
-            <div>
-                Beberapa project yang pernah saya buat:
-                <ul class="project-list">
-                    <li><b>Website Portofolio</b> - HTML, CSS, JS</li>
-                    <li><b>AI Chatbot Sederhana</b> - Python & Flask</li>
-                    <li><b>Landing Page UMKM</b> - ReactJS</li>
-                </ul>
-                <div style="margin-top:14px;">
-                    <a href="https://github.com/danielzxcb-pixel?tab=repositories" target="_blank"
-                        style="background:var(--accent);color:var(--text);padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-                        Lihat Repository GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkenalan Diri - Daniel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <title>Personal Page</title>
     <style>
-        :root {
-            --primary: #1e88e5;
-            --accent: #ffd600;
-            --bg: #f4f8fb;
-            --card: #fff;
-            --text: #222;
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        html {
+
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
             scroll-behavior: smooth;
         }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .navbar {
-            background: var(--card);
-            box-shadow: 0 2px 12px rgba(30,136,229,0.04);
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             position: fixed;
-            width: 100%;
             top: 0;
-            left: 0;
-            z-index: 100;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        .navbar-list {
+
+        nav .container {
             display: flex;
-            justify-content: center;
-            gap: 28px;
-            padding: 0;
-            margin: 0;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
             list-style: none;
         }
-        .navbar-list li a {
-            display: block;
+
+        .nav-menu li {
+            margin-left: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
             text-decoration: none;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 18px 0;
-            transition: color 0.18s;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .nav-menu a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: #ffd700;
+        }
+
+        .hamburger {
+            display: none;
             cursor: pointer;
+            color: white;
+            font-size: 1.5rem;
         }
-        .navbar-list li a.active,
-        .navbar-list li a:hover {
-            color: var(--accent);
-        }
-        main {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 120px 16px 32px 16px;
-        }
+
+        /* Sections */
         section {
-            background: var(--card);
-            border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(30,136,229,0.10);
-            padding: 40px 32px;
-            margin-bottom: 38px;
-        }
-        .hero {
+            padding: 100px 0;
+            min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
+        }
+
+        section:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        /* Home Section */
+        #home {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
             text-align: center;
         }
-        .hero-img {
-            width: 120px;
-            height: 120px;
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid var(--primary);
-            margin-bottom: 18px;
+            border: 5px solid white;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        .hero-title {
-            font-size: 2.3rem;
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
             font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 8px;
         }
-        .hero-subtitle {
-            font-size: 1.18rem;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
-        .hero-desc {
-            color: #444;
-            font-size: 1rem;
-            margin-bottom: 18px;
-        }
-        .social {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            margin-top: 10px;
-        }
-        .social a {
-            background: var(--primary);
-            color: #fff;
-            padding: 9px 14px;
-            border-radius: 7px;
-            font-size: 1rem;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.18s;
-        }
-        .social a:hover {
-            background: var(--accent);
-            color: var(--text);
-        }
-        h2 {
-            color: var(--primary);
+
+        .hero-content p {
             font-size: 1.3rem;
-            margin-bottom: 16px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
         }
-        ul.project-list {
-            text-align: left;
-            margin: 20px 0 0 0;
-            padding-left: 18px;
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        ul.project-list li {
-            margin-bottom: 8px;
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        @media (max-width: 700px) {
-            main {
-                padding: 110px 2vw 30px 2vw;
+
+        /* About Section */
+        #about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Skills Section */
+        .skills {
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            margin-bottom: 1rem;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .skill-bar {
+            background-color: #e9ecef;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+        }
+
+        /* Reflection Section */
+        #reflection {
+            background-color: #f8f9fa;
+        }
+
+        .reflection-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .reflection-content h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .reflection-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .reflection-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .reflection-item h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .reflection-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: white;
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .projects-header h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .project-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .project-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .social-links {
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
             }
-            section {
-                padding: 22px 8px;
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background-color: #667eea;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+                padding: 2rem 0;
             }
-            .navbar-list {
-                gap: 14px;
+
+            .nav-menu.active {
+                left: 0;
             }
-            .hero-title {
-                font-size: 1.5rem;
+
+            .nav-menu li {
+                margin: 1.5rem 0;
             }
-            .hero-img {
-                width: 85px;
-                height: 85px;
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .about-text h2,
+            .reflection-content h2,
+            .projects-header h2 {
+                font-size: 2rem;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const links = document.querySelectorAll('.navbar-list li a');
-            const sections = ['welcome', 'about', 'refleksi', 'project'].map(id => document.getElementById(id));
-            function onScroll() {
-                let idx = 0;
-                sections.forEach((sec, i) => {
-                    const top = sec.offsetTop - 90;
-                    if (window.scrollY >= top) idx = i;
-                });
-                links.forEach((a, i) => a.classList.toggle('active', i === idx));
-            }
-            window.addEventListener('scroll', onScroll);
-            links.forEach((link, i) => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const section = sections[i];
-                    const offset = section.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({top: offset, behavior: 'smooth'});
-                });
-            });
-        });
-    </script>
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a href="#welcome" class="active">Welcome</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#refleksi">Refleksi Diri</a></li>
-            <li><a href="#project">My Project</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">My Portfolio</a>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#reflection">Refleksi Belajar</a></li>
+                <li><a href="#projects">My Projects</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <section id="welcome" class="hero">
-            <img class="hero-img" src="https://i.pravatar.cc/120?img=3" alt="Foto Profil">
-            <div class="hero-title">Daniel Z</div>
-            <div class="hero-subtitle">Mahasiswa & Web Developer</div>
-            <div class="hero-desc">
-                Selamat datang di website perkenalan diri saya.<br>
-                Saya suka belajar teknologi baru dan membangun proyek digital!
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0cdecfcb-0cf8-47db-b970-14644a43dcde.png" alt="Professional headshot of a software developer with a friendly smile, wearing business casual attire against a modern office background" class="profile-image">
+                <h1>John Doe</h1>
+                <p>Full Stack Developer & UI/UX Enthusiast</p>
+                <a href="#projects" class="cta-button">View My Work</a>
             </div>
-            <div class="social">
-                <a href="mailto:daniel@example.com">Email</a>
-                <a href="https://github.com/danielzxcb-pixel" target="_blank">GitHub</a>
-                <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <div>
-                Saya Daniel, seorang mahasiswa yang antusias di bidang pengembangan web dan AI.
-                Saya suka belajar hal baru, berkolaborasi, dan menciptakan solusi digital yang bermanfaat.
-                Motto saya: <b>"Tetap berkembang, jangan takut gagal."</b>
-            </div>
-        </section>
-        <section id="refleksi">
-            <h2>Refleksi Diri</h2>
-            <div>
-                Dalam proses belajar web, saya pernah gagal deploy project dan menemukan banyak bug. Tapi dari situ saya belajar pentingnya ketekunan dan evaluasi diri.
-                Refleksi diri membantu saya terus memperbaiki kemampuan dan karakter.
-            </div>
-        </section>
-        <section id="project">
-            <h2>My Project</h2>
-            <div>
-                Beberapa project yang pernah saya buat:
-                <ul class="project-list">
-                    <li><b>Website Portofolio</b> - HTML, CSS, JS</li>
-                    <li><b>AI Chatbot Sederhana</b> - Python & Flask</li>
-                    <li><b>Landing Page UMKM</b> - ReactJS</li>
-                </ul>
-                <div style="margin-top:14px;">
-                    <a href="https://github.com/danielzxcb-pixel?tab=repositories" target="_blank"
-                        style="background:var(--accent);color:var(--text);padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
-                        Lihat Repository GitHub
-                    </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7687be3f-13a3-4493-ad9c-369fc1d5150b.png" alt="Developer working on laptop in a modern co-working space with natural lighting and plants" class="about-image">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a passionate Full Stack Developer with over 5 years of experience in creating digital solutions that make a difference. My journey in technology started during my university years, and I've been hooked ever since.</p>
+                    <p>I specialize in JavaScript ecosystem including React, Node.js, and modern web technologies. I believe in writing clean, efficient code and creating user experiences that are both beautiful and functional.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript/TypeScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section id="reflection">
+        <div class="container">
+            <div class="reflection-content">
+                <h2>Refleksi Belajar</h2>
+                
+                <div class="reflection-item">
+                    <h3>Perjalanan Pembelajaran</h3>
+                    <p>Selama perjalanan belajar saya, saya menyadari bahwa konsistensi adalah kunci utama. Setiap hari, saya berusaha untuk mempelajari sesuatu yang baru, baik itu melalui kursus online, membaca dokumentasi, atau mengerjakan proyek pribadi.</p>
+                </div>
+
+                <div class="reflection-item">
+                    <h3>Tantangan dan Solusi</h3>
+                    <p>Salah satu tantangan terbesar adalah mengikuti perkembangan teknologi yang sangat cepat. Solusi yang saya terapkan adalah fokus pada fundamental programming dan memilih teknologi yang sesuai dengan kebutuhan proyek daripada mengikuti tren semata.</p>
+                </div>
+
+                <div class="reflection-item">
+                    <h3>Pelajaran Berharga</h3>
+                    <p>Saya belajar bahwa failure adalah bagian dari proses belajar. Setiap bug yang diperbaiki, setiap error yang diatasi, memberikan pemahaman yang lebih dalam tentang bagaimana sistem bekerja secara keseluruhan.</p>
+                </div>
+
+                <div class="reflection-item">
+                    <h3>Future Goals</h3>
+                    <p>Ke depan, saya berencana untuk mendalami lebih lanjut tentang machine learning dan cloud computing, serta berkontribusi pada open source projects untuk terus mengasah kemampuan dan berbagi pengetahuan dengan komunitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2>My Projects</h2>
+                <p>Beberapa proyek yang telah saya kerjakan</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/abe18311-1215-430a-91c3-95cd52401425.png" alt="Dashboard application interface showing analytics charts and data visualizations with modern dark theme design" class="project-image">
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Dashboard interaktif untuk visualisasi data dengan fitur real-time updates dan customizable widgets.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/224ac23c-1c77-4c18-89e4-83a2a0ef85e3.png" alt="E-commerce mobile app interface showing product listings with clean modern design and intuitive navigation" class="project-image">
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Platform e-commerce lengkap dengan sistem pembayaran, manajemen inventory, dan user authentication.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Stripe</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03d1ca7f-4ced-41d9-9147-6f848525304e.png" alt="Task management web application with kanban board layout and collaborative features for team productivity" class="project-image">
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Aplikasi manajemen tugas kolaboratif dengan fitur drag-and-drop, real-time collaboration, dan notifications.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Socket.io</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+                <a href="#" title="Instagram">Instagram</a>
+            </div>
+            <p>© 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect for navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(102, 126, 234, 0.95)';
+                nav.style.backdropFilter = 'blur(10px)';
+            } else {
+                nav.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                nav.style.backdropFilter = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
+
