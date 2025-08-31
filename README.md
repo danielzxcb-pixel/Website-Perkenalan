@@ -1,5 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Perkenalan Diri - Daniel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+        /* ... (isi CSS kamu di sini, copy saja dari yang sudah kamu punya) ... */
+    </style>
+    <!-- Javascript -->
+    <script>
+        /* ... (isi script kamu di sini, copy saja dari yang sudah kamu punya) ... */
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="#welcome" class="active">Welcome</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#refleksi">Refleksi Diri</a></li>
+            <li><a href="#project">My Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome" class="hero">
+            <img class="hero-img" src="https://i.pravatar.cc/120?img=3" alt="Foto Profil">
+            <div class="hero-title">Daniel Z</div>
+            <div class="hero-subtitle">Mahasiswa & Web Developer</div>
+            <div class="hero-desc">
+                Selamat datang di website perkenalan diri saya.<br>
+                Saya suka belajar teknologi baru dan membangun proyek digital!
+            </div>
+            <div class="social">
+                <a href="mailto:daniel@example.com">Email</a>
+                <a href="https://github.com/danielzxcb-pixel" target="_blank">GitHub</a>
+                <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div>
+                Saya Daniel, seorang mahasiswa yang antusias di bidang pengembangan web dan AI.
+                Saya suka belajar hal baru, berkolaborasi, dan menciptakan solusi digital yang bermanfaat.
+                Motto saya: <b>"Tetap berkembang, jangan takut gagal."</b>
+            </div>
+        </section>
+        <!-- Refleksi Diri Section -->
+        <section id="refleksi">
+            <h2>Refleksi Diri</h2>
+            <div>
+                Dalam proses belajar web, saya pernah gagal deploy project dan menemukan banyak bug. Tapi dari situ saya belajar pentingnya ketekunan dan evaluasi diri.
+                Refleksi diri membantu saya terus memperbaiki kemampuan dan karakter.
+            </div>
+        </section>
+        <!-- My Project Section -->
+        <section id="project">
+            <h2>My Project</h2>
+            <div>
+                Beberapa project yang pernah saya buat:
+                <ul class="project-list">
+                    <li><b>Website Portofolio</b> - HTML, CSS, JS</li>
+                    <li><b>AI Chatbot Sederhana</b> - Python & Flask</li>
+                    <li><b>Landing Page UMKM</b> - ReactJS</li>
+                </ul>
+                <div style="margin-top:14px;">
+                    <a href="https://github.com/danielzxcb-pixel?tab=repositories" target="_blank"
+                        style="background:var(--accent);color:var(--text);padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;">
+                        Lihat Repository GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
