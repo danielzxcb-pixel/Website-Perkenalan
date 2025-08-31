@@ -149,7 +149,6 @@
         }
     </style>
     <script>
-        // Navbar active link on scroll
         document.addEventListener('DOMContentLoaded', function() {
             const links = document.querySelectorAll('.navbar-list li a');
             const sections = ['welcome', 'about', 'refleksi', 'project'].map(id => document.getElementById(id));
@@ -162,8 +161,6 @@
                 links.forEach((a, i) => a.classList.toggle('active', i === idx));
             }
             window.addEventListener('scroll', onScroll);
-
-            // Smooth scroll on navbar click (offset for fixed navbar)
             links.forEach((link, i) => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -176,7 +173,6 @@
     </script>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <ul class="navbar-list">
             <li><a href="#welcome" class="active">Welcome</a></li>
@@ -186,7 +182,6 @@
         </ul>
     </nav>
     <main>
-        <!-- Welcome Section -->
         <section id="welcome" class="hero">
             <img class="hero-img" src="https://i.pravatar.cc/120?img=3" alt="Foto Profil">
             <div class="hero-title">Daniel Z</div>
@@ -196,13 +191,11 @@
                 Saya suka belajar teknologi baru dan membangun proyek digital!
             </div>
             <div class="social">
-                <a href="mailto:danielzxcb@example.com">Email</a>
+                <a href="mailto:daniel@example.com">Email</a>
                 <a href="https://github.com/danielzxcb-pixel" target="_blank">GitHub</a>
                 <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
             </div>
         </section>
-
-        <!-- About Me Section -->
         <section id="about">
             <h2>About Me</h2>
             <div>
@@ -211,8 +204,6 @@
                 Motto saya: <b>"Tetap berkembang, jangan takut gagal."</b>
             </div>
         </section>
-
-        <!-- Refleksi Diri Section -->
         <section id="refleksi">
             <h2>Refleksi Diri</h2>
             <div>
@@ -220,8 +211,6 @@
                 Refleksi diri membantu saya terus memperbaiki kemampuan dan karakter.
             </div>
         </section>
-
-        <!-- My Project Section -->
         <section id="project">
             <h2>My Project</h2>
             <div>
